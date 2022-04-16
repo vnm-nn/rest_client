@@ -24,5 +24,11 @@ public class App
 
         Employee empById = communication.getEmployee(10);
         System.out.println(empById);
+
+        System.out.println("****************************************************");
+
+        Employee emp = new Employee(20,"Oleg", "Olegov", "Something", 400);
+        communication.saveEmployee(emp);
+        System.out.println(emp);
     }
 }

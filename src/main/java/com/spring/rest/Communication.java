@@ -27,7 +27,8 @@ public class Communication {
     }
 
     public Employee getEmployee(int id){
-        return null;
+        Employee employee = restTemplate.getForObject(URL + "/" + id, Employee.class);
+        return employee;
     }
 
     public void saveEmployee(Employee employee){
